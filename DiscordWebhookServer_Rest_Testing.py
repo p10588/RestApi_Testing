@@ -1,10 +1,10 @@
+import os
 import requests
 
 # Discord Webhook URL
-webhook_url = 'https://discord.com/api/webhooks/1149263328003227669/b5MFz_VJ8y9YXAguieMziRoz5xXok8VIcOyNp8DrmbGXrqEOMIUu1b327ldBR744suPD'
-
+webhook_url = os.getenv('DISCORD_URL')
 # 要发送的消息内容
-message = 'Hello, Discord! This is a test message.'
+message = 'Hello, Discord! This is a test message Testing YAAAAAA.'
 
 # 构建消息数据
 data = {
