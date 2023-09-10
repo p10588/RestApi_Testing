@@ -3,7 +3,7 @@ import requests
 
 api_key = os.getenv('OPENAI_API_KEY')
 
-url = 'https://api.openai.com/v1/chat/completions' # 定义要发送的数据
+url = 'https://api.openai.com/v1/chat/completions' 
 
 data = {
     'model': 'gpt-3.5-turbo',
@@ -14,7 +14,7 @@ data = {
     'temperature': 0.7
    }
 
-# 定义要发送的标头
+
 headers = {
     'Content-Type': 'application/json',
     'Authorization': f'Bearer {api_key}',
